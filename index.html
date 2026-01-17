@@ -2,186 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Stefano Mauri">
+  <meta name="description" content="Tindangle FTK Deck Guide">
+  <meta name="keywords" content="Tindangle FTK, Duel Links FTK, First Turn Kill Deck">
+
   <title>Tindangle FTK – Duel Links Guide</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #020617;
-      padding: 20px;
-      border-bottom: 2px solid #1e293b;
-    }
-
-    header h1 {
-      margin: 0;
-      color: #38bdf8;
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    h2 {
-      color: #7dd3fc;
-      border-bottom: 1px solid #1e293b;
-      padding-bottom: 5px;
-      margin-top: 40px;
-    }
-
-    h3 {
-      color: #a5f3fc;
-    }
-
-    .box {
-      background: #020617;
-      border-left: 4px solid #38bdf8;
-      padding: 15px;
-      margin: 20px 0;
-    }
-
-    .warning {
-      border-left-color: #f87171;
-      background: #1f0a0a;
-    }
-
-    .success {
-      border-left-color: #4ade80;
-      background: #052e1a;
-    }
-
-    ul, ol {
-      margin-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    details {
-      background: #020617;
-      padding: 15px;
-      border: 1px solid #1e293b;
-      margin: 15px 0;
-      border-radius: 4px;
-    }
-
-    summary {
-      cursor: pointer;
-      font-weight: bold;
-      color: #38bdf8;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #94a3b8;
-      border-top: 1px solid #1e293b;
-      margin-top: 50px;
-    }
-  </style>
+  <link rel="stylesheet" href="Guide_site.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Tindangle FTK – Duel Links</h1>
-  <p>Isometric Inferno • High-risk First Turn Kill</p>
+<!-- Ambient Side Effects -->
+<div class="side left"></div>
+<div class="side right"></div>
+
+<header class="top-header">
+  <div class="header-title">
+    <h1>Duel Links – Tindangle FTK</h1>
+    <p>High-Risk First Turn Kill Deck</p>
+  </div>
+
+  <nav class="header-nav">
+    <a href="#overview">Overview</a>
+    <a href="#requirements">Requirements</a>
+    <a href="#decklist">Decklist</a>
+    <a href="#combo">FTK Combo</a>
+    <a href="#notes">Notes</a>
+  </nav>
+
 </header>
 
 <main>
 
-  <h2>Overview</h2>
-  <p>
+  <h2 id="overview" class="reveal">Overview</h2>
+  <p class="reveal delay-1">
     This deck aims to achieve a full LP kill in a single turn using
     <strong>Tindangle</strong> monsters, <strong>Stairs of Mail</strong>,
-    and a precise sequence of flips, links, and XYZ summons.
+    and a very strict sequence of flips, Links, and XYZ summons.
   </p>
 
-  <div class="box warning">
-    <strong>⚠ Important:</strong>  
-    This is a high-risk combo deck. If interrupted, you will almost always lose.
+  <div class="box warning reveal reveal-left">
+    <strong>⚠ Important:</strong><br>
+    This is a very fragile combo deck. Any interruption usually results in an instant loss.
   </div>
 
-  <h2>Deck Requirements</h2>
+  <h2 id="requirements" class="reveal">Deck Requirements</h2>
   <ul>
-    <li>Must go first</li>
-    <li>No opponent LP gain or LP damage</li>
-    <li>No effect negation (Veiler, Spirit Dragon, etc.)</li>
-    <li>Correct starting hand distribution</li>
+    <li class="reveal delay-1">You must go first</li>
+    <li class="reveal delay-2">No opponent LP gain or LP damage</li>
+    <li class="reveal delay-3">No effect negation (Veiler, Spirit Dragon, etc.)</li>
+    <li class="reveal delay-4">Correct starting hand distribution</li>
   </ul>
 
-  <h2>Decklist</h2>
+  <h2 id="decklist" class="reveal">Decklist</h2>
 
-  <h3>Main Deck</h3>
+  <h3 class="reveal">Main Deck</h3>
   <ul>
-    <li>Tindangle Protector</li>
-    <li>Tindangle Intruder</li>
-    <li>Tindangle Jhrelth</li>
-    <li>Tindangle Delaunay</li>
-    <li>Tindangle Dholes</li>
-    <li>Needle Ball</li>
-    <li>Shaddoll Squamata</li>
-    <li>Resh Shaddoll Incarnation</li>
+    <li class="reveal delay-1">Tindangle Protector</li>
+    <li class="reveal delay-2">Tindangle Intruder</li>
+    <li class="reveal delay-3">Tindangle Jhrelth</li>
+    <li class="reveal delay-4">Tindangle Delaunay</li>
+    <li class="reveal delay-5">Tindangle Dholes</li>
+    <li class="reveal delay-6">Needle Ball</li>
+    <li class="reveal delay-7">Shaddoll Squamata</li>
+    <li class="reveal delay-8">Resh Shaddoll Incarnation</li>
   </ul>
 
-  <h3>Extra Deck</h3>
+  <h3 class="reveal">Extra Deck</h3>
   <ul>
-    <li>Number 47: Nightmare Shark</li>
-    <li>Number 6: Chronomaly Atlantis</li>
-    <li>Knightmare Unicorn</li>
-    <li>Subterror Behemoth Fiendess</li>
-    <li>Agave Dragon</li>
+    <li class="reveal delay-1">Number 47: Nightmare Shark</li>
+    <li class="reveal delay-2">Number 6: Chronomaly Atlantis</li>
+    <li class="reveal delay-3">Knightmare Unicorn</li>
+    <li class="reveal delay-4">Subterror Behemoth Fiendess</li>
+    <li class="reveal delay-5">Agave Dragon</li>
   </ul>
 
-  <h2>FTK Combo – Step by Step</h2>
+  <h2 id="combo" class="reveal">FTK Combo – Step by Step</h2>
 
-  <details open>
-    <summary>Click to expand combo steps</summary>
-
+  <div class="combo-phase reveal reveal-left">
+    <h4>Phase 1 – Setup</h4>
     <ol>
-      <li>Activate <strong>Isometric Inferno</strong> at start of turn.</li>
-      <li>Send required Tindangle cards to the Graveyard.</li>
+      <li>Activate <strong>Isometric Inferno</strong>.</li>
+      <li>Send required Tindangle cards to the GY.</li>
       <li>Set and activate <strong>Stairs of Mail</strong>.</li>
-      <li>Trigger <strong>Tindangle Delaunay</strong> to summon face-down monsters.</li>
-      <li>Flip <strong>Tindangle Protector</strong> and resolve draws.</li>
-      <li>Chain flip effects of <strong>Jhrelth</strong> and <strong>Intruder</strong>.</li>
-      <li>Link Summon <strong>Subterror Behemoth Fiendess</strong>.</li>
-      <li>Send <strong>Shaddoll Squamata</strong> → <strong>Resh Shaddoll Incarnation</strong>.</li>
-      <li>XYZ Summon <strong>Number 47</strong>.</li>
-      <li>XYZ Summon <strong>Number 6</strong> and halve opponent LP.</li>
-      <li>Link Summon <strong>Agave Dragon</strong> and gain LP.</li>
-      <li>Repeatedly flip <strong>Needle Ball</strong> to finish the duel.</li>
     </ol>
+  </div>
 
-  </details>
+  <div class="combo-phase reveal reveal-right">
+    <h4>Phase 2 – Flip Engine</h4>
+    <ol>
+      <li>Resolve <strong>Tindangle Delaunay</strong>.</li>
+      <li>Flip <strong>Tindangle Protector</strong>.</li>
+      <li>Chain <strong>Jhrelth</strong> + <strong>Intruder</strong>.</li>
+    </ol>
+  </div>
 
-  <div class="box success">
-    <strong>✅ Result:</strong>  
+  <div class="combo-phase reveal reveal-left">
+    <h4>Phase 3 – Extra Deck Setup</h4>
+    <ol>
+      <li>Link Summon <strong>Subterror Behemoth Fiendess</strong>.</li>
+      <li>Send <strong>Squamata → Resh</strong>.</li>
+      <li>XYZ Summon <strong>Number 47</strong>.</li>
+      <li>XYZ Summon <strong>Number 6</strong>.</li>
+    </ol>
+  </div>
+
+  <div class="combo-phase reveal reveal-right">
+    <h4>Phase 4 – FTK Execution</h4>
+    <ol>
+      <li>Link Summon <strong>Agave Dragon</strong>.</li>
+      <li>Repeatedly flip <strong>Needle Ball</strong>.</li>
+    </ol>
+  </div>
+
+
+  <div class="box success reveal reveal-left">
+    <strong>✅ Result:</strong><br>
     Opponent reaches 0 LP during your first turn.
   </div>
 
-  <h2>Why This Deck Isn’t Meta</h2>
-  <ul>
-    <li>Extremely fragile</li>
-    <li>Loses to any quick negation</li>
-    <li>LP changes instantly break the combo</li>
-    <li>Very strict sequencing</li>
+  <h2 id="notes" class="reveal">Why This Deck Isn’t Meta</h2>
+  <ul style="height: 500px;">
+    <li class="reveal delay-1">Extremely fragile</li>
+    <li class="reveal delay-2">Dies to any quick negation</li>
+    <li class="reveal delay-3">LP changes instantly break the combo</li>
+    <li class="reveal delay-4">Very strict sequencing</li>
   </ul>
 
 </main>
 
-<footer>
-  <p>Created by stefanomaurile0-droid • Duel Links FTK Guide</p>
+<footer class="bottom-footer">
+  <p>
+    Guide created by <strong>Stefano Mauri</strong><br>
+    Yu-Gi-Oh! Duel Links • Tindangle FTK
+  </p>
 </footer>
+
+<script>
+  /* Reveal animations */
+  const reveals = document.querySelectorAll('.reveal');
+
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+    const revealPoint = 120;
+
+    reveals.forEach(el => {
+      const revealTop = el.getBoundingClientRect().top;
+      if (revealTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();
+
+  /* Nav highlight (robust version) */
+  const navLinks = document.querySelectorAll('.header-nav a');
+  const sections = Array.from(document.querySelectorAll('h2[id]'));
+
+  function updateNavHighlight() {
+    let currentSection = sections[0].id;
+
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 140) {
+        currentSection = section.id;
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.toggle(
+        'active',
+        link.getAttribute('href') === `#${currentSection}`
+      );
+    });
+  }
+
+  window.addEventListener('scroll', updateNavHighlight);
+  window.addEventListener('load', updateNavHighlight);
+
+</script>
 
 </body>
 </html>
