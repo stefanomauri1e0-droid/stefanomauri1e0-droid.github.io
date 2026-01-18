@@ -27,10 +27,19 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 10px 30px; /* Reduced vertical padding */
   border-bottom: 2px solid #1e293b;
   backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  min-height: 70px; /* Ensures header has space */
+}
+
+/* Specific button spacing to prevent crowding */
+.header-nav {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-end;
+  gap: 8px; /* Controlled spacing between buttons */
+  max-width: 70%; /* Prevents nav from squishing the title */
 }
 
 .header-title {
@@ -58,7 +67,7 @@ h2 {
   position: relative;
   margin-left: 5px;
   margin-right: 5px;
-  padding: 12px 18px;
+  padding: 10px 14px;
   border-radius: 8px;
   color: #cbd5f5;
   text-decoration: none;
@@ -115,6 +124,7 @@ main {
 
 h2 {
   color: #7dd3fc;
+  font-size: 170%;
   border-bottom: 1px solid #1e293b;
   padding-bottom: 5px;
   margin-top: 50px;
@@ -122,6 +132,7 @@ h2 {
 
 h3 {
   color: #a5f3fc;
+  font-size: 150%;
 }
 
 /* === Current section ===*/
@@ -202,6 +213,166 @@ details[open] {
 @keyframes expand {
   from { opacity: 0; transform: scaleY(0.95); }
   to { opacity: 1; transform: scaleY(1); }
+}
+
+/* === Skill Card Styling === */
+.skill-card {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border: 2px solid #38bdf8;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 25px 0;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+}
+
+.skill-header {
+  background: #0f9bd6;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-icon {
+  font-size: 1.2rem;
+}
+
+.skill-name {
+  color: #020617;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skill-body {
+  padding: 20px;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #cbd5f5;
+  line-height: 1.4;
+}
+
+/* === Sub-section spacing === */
+.sub-section {
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+/* Info box variation */
+.box.info {
+  border-left-color: #38bdf8;
+  background: #0c1e33;
+}
+
+/* === Obtainment Section === */
+.obtainment-group {
+  margin-bottom: 40px;
+}
+
+.obtainment-group h3 {
+  font-size: 120%;
+  background-color: #050920e4;
+  padding: 1.3% 1% 1.3% 2%;
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #38bdf8;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+  display: flex;
+  align-items: center;
+}
+
+.obtainment-group h3::before {
+  content: '◈';
+  
+  margin-right: 10px;
+  font-size: 0.9rem;
+  color: #6beca1;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+/* Tickets and box chip*/
+
+img.ticket{
+  width: 7%;
+  height: 4%;
+}
+img.chip{
+  width: 5.8%;
+  height: 4.6%;
+}
+
+/* Ensure the Obtainment section has the same anchor offset as the others */
+#obtainment {
+  scroll-margin-top: 130px;
+}
+
+/* Individual Card Container */
+.card-container {
+  position: relative;
+  width: 135px; /* Standard YGO card aspect ratio */
+  height: 195px;
+  margin-top: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #020617;
+  border: 1px solid #1e293b;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover Animation */
+.card-container:hover {
+  transform: scale(1.1);
+  z-index: 5;
+  border-color: #38bdf8;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Black Opaque Overlay */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #38bdf8;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  transform: translateY(100%); /* Hidden by default */
+  transition: transform 0.25s ease-in-out;
+}
+
+.card-container:hover .card-overlay {
+  transform: translateY(0); /* Slides up on hover */
+}
+
+.card-container-number{
+  font-size: 17pt;
+  color: rgba(174, 17, 17, 0.844);
+  font-weight: bold;
+  position: absolute;
+  top: 54pt;
+  left: 40pt;
 }
 
 /* === Scroll Reveal Animations === */
@@ -306,16 +477,16 @@ details[open] {
   }
 
   .header-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a neat 3x2 grid on mobile */
+    gap: 8px;
+    width: 100%;
   }
 
   .header-nav a {
-    margin: 0;
-    padding: 6px 10px;
-    font-size: 0.75rem;
+    text-align: center;
+    padding: 8px 4px;
+    font-size: 0.7rem; /* Slightly smaller text to fit all 6 buttons */
   }
 
   .header-nav a::after {
@@ -333,5 +504,18 @@ details[open] {
 
   .side.right{
     width: 10px;
+  }
+
+  .card-row {
+    justify-content: center;
+  }
+
+  .card-container {
+    width: 100px;
+    height: 145px;
+  }
+
+  .card-overlay {
+    font-size: 0.65rem;
   }
 }
