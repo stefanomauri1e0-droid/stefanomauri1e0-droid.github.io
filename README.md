@@ -85,7 +85,7 @@ Build and play it **for fun and learning**, not for ladder climbing.
 
 **Stefano Mauri**
 
-If you enjoy the guide or find it useful, feel free to share it or link to it.
+If you enjoy the guide or find it useful, feel free to share it or link to it. Thanks!
 
 ---
 
