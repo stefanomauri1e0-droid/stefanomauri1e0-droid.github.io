@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stefanomauri1e0-droid.github.io/sitemap.xml
